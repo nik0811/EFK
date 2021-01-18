@@ -21,18 +21,19 @@ This repository contains script which will help devops guy to setup quick develo
        2. To Deploy the Kind Cluster with EFK and Sample nodejs App
 
          `$ ./efk.sh -a deploy`
+```
+    
+# To Access Different Services Use below URL's:
 
-    # To Access Different Services Use below URL's:
-
-    ## Elasticsearch
+## Elasticsearch
 
     `http://nodeIP/elastic`
     
-    ## Kibana
+## Kibana
  
     `http://nodeIP/kibana`
 
-    ## NodeJs Sample App
+## NodeJs Sample App
 
     `http://nodeIP/node`
-```
+
