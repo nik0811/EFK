@@ -16,11 +16,11 @@ If you are running the kind cluster on local development server on VMware/Workst
     Example:
        1. To Destroy the Kind Cluster
 
-          `$ ./efk.sh -a destroy`
+          $ ./efk.sh -a destroy
 
        2. To Deploy the Kind Cluster with EFK and Sample nodejs App
 
-         `$ ./efk.sh -a deploy`
+          $ ./efk.sh -a deploy
 ```
     
 # To Access Different Services Use below URL's:
