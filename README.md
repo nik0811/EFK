@@ -12,9 +12,27 @@ This repository contains script which will help devops guy to setup quick develo
     Usage:
         -h help
         -a action  #Value=deploy/destroy
+
     Example:
        1. To Destroy the Kind Cluster
-          $ ./efk.sh -a destroy
+
+          `$ ./efk.sh -a destroy`
+
        2. To Deploy the Kind Cluster with EFK and Sample nodejs App
-          $ ./efk.sh -a deploy
+
+         `$ ./efk.sh -a deploy`
+
+    # To Access Different Services Use below URL's:
+
+    ## Elasticsearch
+
+    `http://nodeIP/elastic`
+    
+    ## Kibana
+ 
+    `http://nodeIP/kibana`
+
+    ## NodeJs Sample App
+
+    `http://nodeIP/node`
 ```
