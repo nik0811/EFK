@@ -3,7 +3,7 @@
 This repository contains script which will help devops guy to setup quick development setup of `Elasticsearch, Fluentd and kibana` on `Kind Cluster`.
 
 ## Why to create Script?
-#If you are running the kind cluster on local development server on VMware/Workstation which requires to be shutdown in non-working hour then It will become hell for you to setup entire thing from scratch.
+If you are running the kind cluster on local development server on VMware/Workstation which requires to be shutdown in non-working hour then It will become hell for you to setup entire thing from scratch.
 
 ## How to run the Script ?
 
