@@ -27,13 +27,13 @@ This repository contains script which will help devops guy to setup quick develo
 
 ## Elasticsearch
 
-    `http://nodeIP/elastic`
+`http://nodeIP/elastic`
     
 ## Kibana
  
-    `http://nodeIP/kibana`
+ `http://nodeIP/kibana`
 
 ## NodeJs Sample App
 
-    `http://nodeIP/node`
+`http://nodeIP/node`
 
