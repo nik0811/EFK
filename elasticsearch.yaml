@@ -1,0 +1,4 @@
+esConfig:
+  elasticsearch.yml: |
+    # Enable xpack.security which is provided in basic subscription
+    xpack.monitoring.collection.enabled: true
