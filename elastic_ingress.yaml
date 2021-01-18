@@ -1,0 +1,44 @@
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: kibana
+  annotations:
+spec:
+  rules:
+  - http:
+      paths:
+      - path: /elastic
+        pathType: Prefix
+        backend:
+            service:
+                 name: elasticsearch-master
+                 port: 
+                   number: 9200
+  - http:
+      paths:
+      - path: /kibana
+        pathType: Prefix
+        backend:
+            service:
+                 name: kibana-kibana
+                 port:
+                  number: 5601
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: nodejs-app
+  namespace: app
+  annotations:
+spec:
+  rules:
+  - http:
+      paths:
+      - path: /node
+        pathType: Prefix
+        backend:
+            service:
+                 name: nodejs
+                 port:
+                   number: 3000

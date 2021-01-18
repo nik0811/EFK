@@ -1,0 +1,14 @@
+kibanaConfig:
+   kibana.yml: |
+        server.basePath: "/kibana"
+        server.rewriteBasePath: true
+extraEnvs:
+  - name: "NODE_OPTIONS"
+    value: "--max-old-space-size=1800"
+  - name: ELASTICSEARCH_USER
+    value: "elastic"
+  - name: ELASTICSEARCH_PASSWORD
+    valueFrom:
+            secretKeyRef:
+              name: elasticsearch-pw-elastic
+              key: password
